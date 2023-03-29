@@ -1140,3 +1140,16 @@ const quotes = [
     topics: ["inspiration", "Wisdom"],
   },
 ];
+
+function generateRandomNumber(num) {
+  // Gets # from 0 -> num - 1
+  return Math.floor(Math.random() * num);
+}
+console.log(
+  `Here's some ${
+    heresSome[generateRandomNumber(heresSome.length)]
+  }. I hope it ${hopeIt[generateRandomNumber(hopeIt.length)]}.`
+);
+
+console.log(` \"${quotes[generateRandomNumber(quotes.length)]["quote"]}\" `);
+console.log(`- ${quotes[generateRandomNumber(quotes.length)]["author"]}`);
